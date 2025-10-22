@@ -4,11 +4,8 @@ A ChatGPT-like interface with image gallery display
 """
 
 import streamlit as st
-import json
 from datetime import datetime
 from src.main import initialize_agent
-from PIL import Image
-import io
 
 # Page configuration
 st.set_page_config(

@@ -2,6 +2,12 @@
 Test and example usage of the Gallery Image Search Agent
 """
 
+import sys
+import os
+
+# Add parent directory to path to allow imports
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import asyncio
 from src.main import initialize_agent
 from src.tools import (

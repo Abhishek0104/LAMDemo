@@ -3,6 +3,12 @@ Usage Examples for Gallery Image Search Agent
 Demonstrates various ways to use the agent and tools
 """
 
+import sys
+import os
+
+# Add parent directory to path to allow imports
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from src.main import initialize_agent
 from src.tools import (
     search_images, filter_low_quality_images, delete_images,

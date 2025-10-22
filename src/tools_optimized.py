@@ -4,14 +4,9 @@ Implements pagination, artifact pattern, and result summarization to prevent con
 """
 
 import json
-from datetime import datetime
 from typing import List, Dict, Any, Optional
 from langchain.tools import tool
-from langchain_core.messages import ToolMessage
-from src.types import (
-    ImageMetadata, SearchQuery, SearchResult, FilterResult,
-    DeleteResult, ToolResult
-)
+from src.types import ImageMetadata
 
 # Import sample images from original tools
 from src.tools import SAMPLE_IMAGES

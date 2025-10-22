@@ -4,6 +4,12 @@ Demonstrate context efficiency improvements with optimized tools.
 Compare token usage between original and optimized implementations.
 """
 
+import sys
+import os
+
+# Add parent directory to path to allow imports
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import json
 from src.tools import search_images, analyze_image_metadata as analyze_original
 from src.tools_optimized import (

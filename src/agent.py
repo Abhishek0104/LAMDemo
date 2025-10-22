@@ -7,7 +7,6 @@ from datetime import datetime
 import json
 from langchain_core.messages import BaseMessage, HumanMessage, AIMessage, SystemMessage
 from langgraph.graph import StateGraph, END
-from langgraph.prebuilt import ToolNode
 from langchain_core.tools import Tool
 from src.tools_optimized import GALLERY_TOOLS_OPTIMIZED
 from src.types import AgentState, AgentAction
