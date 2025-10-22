@@ -9,7 +9,7 @@ from langchain_core.messages import BaseMessage, HumanMessage, AIMessage, System
 from langgraph.graph import StateGraph, END
 from langgraph.prebuilt import ToolNode
 from langchain_core.tools import Tool
-from src.tools import GALLERY_TOOLS
+from src.tools_optimized import GALLERY_TOOLS_OPTIMIZED
 from src.types import AgentState, AgentAction
 
 
@@ -25,10 +25,10 @@ class GalleryAgent:
 
         Args:
             llm: LangChain LLM instance (Gemini in this case)
-            tools: List of LangChain tools (defaults to GALLERY_TOOLS)
+            tools: List of LangChain tools (defaults to GALLERY_TOOLS_OPTIMIZED)
         """
         self.llm = llm
-        self.tools = tools or GALLERY_TOOLS
+        self.tools = tools or GALLERY_TOOLS_OPTIMIZED
         self.tool_map = {tool.name: tool for tool in self.tools}
 
         # Bind tools to the LLM
