@@ -81,3 +81,9 @@ Thumbs.db
 gallery.db
 uploads/
 cached_results/
+
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/cache/
+.streamlit/.streamlitrc
+.streamlit/logs/

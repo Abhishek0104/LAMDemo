@@ -7,6 +7,7 @@
 | Level | Document | Time | Purpose |
 |-------|----------|------|---------|
 | **Beginner** | [QUICKSTART.md](./QUICKSTART.md) | 5 min | Fast setup & basic usage |
+| **Beginner-Intermediate** | [STREAMLIT_GUIDE.md](./STREAMLIT_GUIDE.md) | 10 min | Run web interface (NEW) |
 | **Intermediate** | [Readme.md](./Readme.md) | 20 min | Complete feature overview |
 | **Advanced** | [DEVELOPMENT.md](./DEVELOPMENT.md) | 30 min | Architecture & customization |
 
@@ -17,6 +18,8 @@
 | [ARCHITECTURE.md](./ARCHITECTURE.md) | System architecture, diagrams, data flow |
 | [PROJECT_SUMMARY.md](./PROJECT_SUMMARY.md) | Overview, statistics, key features |
 | [PROJECT_CHECKLIST.md](./PROJECT_CHECKLIST.md) | Completion status, what's included |
+| [STREAMLIT_GUIDE.md](./STREAMLIT_GUIDE.md) | Web interface features & customization |
+| [STREAMLIT_DEPLOYMENT.md](./STREAMLIT_DEPLOYMENT.md) | Deploy to Cloud/Docker/Server |
 
 ---
 
@@ -147,14 +150,18 @@ pip install -r requirements.txt
 cp .env.example .env
 # Edit .env and add GOOGLE_API_KEY
 
-# 3. Run tests
+# 3. Option A: Run the Streamlit web interface (RECOMMENDED)
+streamlit run app.py
+# Opens at http://localhost:8501
+
+# 3. Option B: Run the command-line agent
+python -m src.main
+
+# 4. Run tests
 python -m src.test_agent
 
-# 4. Run examples
+# 5. Run examples
 python examples.py
-
-# 5. Use the agent
-python -m src.main
 ```
 
 ---

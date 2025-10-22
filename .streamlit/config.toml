@@ -1,0 +1,24 @@
+# Streamlit Configuration for Gallery Search Agent
+
+[theme]
+primaryColor = "#2196F3"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F5F5F5"
+textColor = "#262730"
+font = "sans serif"
+
+[client]
+showErrorDetails = true
+toolbarMode = "developer"
+
+[server]
+port = 8501
+headless = true
+runOnSave = true
+maxUploadSize = 10
+
+[logger]
+level = "info"
+
+[browser]
+gatherUsageStats = false
